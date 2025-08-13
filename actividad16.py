@@ -57,5 +57,11 @@ class TrabajoUsuario:
             for i, datos in enumerate(self.lista_usuarios, start=1):
                 print(f"{i}. {datos.mostrar_libro()}")
             print()
+    def buscar2(self,buscando):
+        for i in self.lista_usuarios:
+            if i.nombre == buscando:
+                print("Usuario encontrado")
+                return i.nombre
 
 class Prestamos:
+    pass
